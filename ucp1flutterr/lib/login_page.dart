@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
     final passwordController = TextEditingController();
 
      return Scaffold(
-      backgroundColor: const Color(0xFFFDF5F2), // warna background mirip
+      backgroundColor: const Color(0xFFFDF5F2), 
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -27,3 +27,13 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 32),
+
+              TextField(
+                controller: emailController,
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.email),
+                  labelText: 'Email',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 16),

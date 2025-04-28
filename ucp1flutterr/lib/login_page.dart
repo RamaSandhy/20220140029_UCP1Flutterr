@@ -73,3 +73,14 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Belum memiliki akun? Silahkan ',
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                    },

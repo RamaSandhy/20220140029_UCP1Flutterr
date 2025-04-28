@@ -37,3 +37,15 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
+
+              TextField(
+                controller: passwordController,
+                obscureText: true,
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Icons.lock),
+                  labelText: 'Password',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.visibility_off),
+                ),
+              ),
+              const SizedBox(height: 24),

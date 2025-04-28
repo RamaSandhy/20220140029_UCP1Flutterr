@@ -84,3 +84,13 @@ class LoginPage extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                     },
+                    child: const Text(
+                      'Daftar disini!',
+                      style: TextStyle(
+                        color: Color(0xFFFF5722),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),

@@ -62,3 +62,13 @@ class LoginPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
+                  child: const Text(
+                    'Masuk',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),

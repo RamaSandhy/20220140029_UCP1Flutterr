@@ -160,3 +160,18 @@ class _RegisterPageState extends State<RegisterPage> {
                   ],
                 ),
                 const SizedBox(height: 20),
+                 Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text(
+                            'Password',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          
+              

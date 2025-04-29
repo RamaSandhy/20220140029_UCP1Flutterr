@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
             },
           ),
         ],
-        backgroundColor: const Color(0xFFFF5722),
+        backgroundColor: const Color.fromARGB(255, 89, 7, 102),
       ),
       body: Column(
         children: [
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
             height: 150,
             width: double.infinity,
             decoration: BoxDecoration(
-              color: const Color(0xFFFF5722),
+              color: const Color.fromARGB(255, 95, 4, 98),
               borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
             ),
             child: Center(
@@ -34,10 +34,10 @@ class HomePage extends StatelessWidget {
                 children: const [
                   CircleAvatar(
                     radius: 30,
-                    backgroundImage: AssetImage('assets/profile_picture.png'), // Replace with your profile image
+                    backgroundImage: AssetImage('assets/ambatukamm.jpeg'), // Replace with your profile image
                   ),
                   SizedBox(height: 5),
-                  Text('Rama', style: TextStyle(color: Colors.white, fontSize: 22)),
+                  Text('ambatukam', style: TextStyle(color: Colors.white, fontSize: 22)),
                 ],
               ),
             ),
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                     },
                     child: const Text('Order now'),
                     style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
+                    backgroundColor: const Color.fromARGB(255, 105, 12, 126),
                     )
                   ),
                 ],

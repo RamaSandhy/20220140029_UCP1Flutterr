@@ -291,6 +291,25 @@ class _RegisterPageState extends State<RegisterPage> {
                           MaterialPageRoute(builder: (context) => const LoginPage())
                         );
                       },
+                      child: const Text(
+                        'Login disini!',
+                        style: TextStyle(
+                          color: Color(0xFFFF5722),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 40),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 
               

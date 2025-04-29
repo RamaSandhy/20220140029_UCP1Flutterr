@@ -21,6 +21,7 @@ class _RegisterPageState extends State<RegisterPage> {
   bool _emailError = false;
   bool _phoneError = false;
   bool _passwordError = false;
+  bool _confirmPasswordError = false;
 
   @override
   void dispose() {
@@ -322,6 +323,24 @@ class _RegisterPageState extends State<RegisterPage> {
                                 border: InputBorder.none,
                                 contentPadding: const EdgeInsets.symmetric(vertical: 15),
                               ),
+                              onChanged: (value) {
+                                if (_confirmPasswordError) {
+                                  setState(() {
+                                    _confirmPasswordError = false;
+                                  });
+                                }
+                              },
+                            ),
+                          ),
+                          if (_confirmPasswordError)
+                            const Padding(
+                              padding: EdgeInsets.only(top: 5.0, left: 5.0),
+                              child: Text(
+                                'Konfirmasi password tidak boleh kosong',
+                                style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 12,
+                                ),
                             ),
                           ),
                         ],

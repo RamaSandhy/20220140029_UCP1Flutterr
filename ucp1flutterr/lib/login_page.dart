@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ucp1flutterr/register_page.dart';
 import 'package:ucp1flutterr/home_page.dart';
+import 'package:ucp1flutterr/data_pelanggan_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

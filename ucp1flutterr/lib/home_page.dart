@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ucp1flutterr/data_pelanggan_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,6 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () {
-              // Logic for logout action
             },
           ),
         ],
@@ -93,7 +93,6 @@ class HomePage extends StatelessWidget {
       elevation: 4,
       child: InkWell(
         onTap: () {
-          // Logic for when grid item is tapped
         },
         child: Center(
           child: Column(

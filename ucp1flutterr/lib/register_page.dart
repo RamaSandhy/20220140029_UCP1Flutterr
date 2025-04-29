@@ -63,4 +63,14 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
                  const SizedBox(height: 30),
+                  const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Nama Lengkap',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
 

@@ -259,7 +259,13 @@ class _RegisterPageState extends State<RegisterPage> {
                         context, 
                         MaterialPageRoute(builder: (context) => const LoginPage())
                       );
-                    },      
+                    },   
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFFF5722),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),   
 
 
               

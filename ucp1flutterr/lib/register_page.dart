@@ -111,4 +111,18 @@ class _RegisterPageState extends State<RegisterPage> {
                               color: Colors.white,
                               border: Border.all(color: Colors.grey.shade300),
                             ),
+                             child: TextField(
+                              controller: emailController,
+                              decoration: const InputDecoration(
+                                hintText: 'Email',
+                                prefixIcon: Icon(Icons.email),
+                                border: InputBorder.none,
+                                contentPadding: EdgeInsets.symmetric(vertical: 15),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 16),
 

@@ -17,8 +17,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              const Icon(Icons.navigation, size: 64, color: Colors.black),
-              const SizedBox(height: 16),
+              Image.asset('assets/stussy.png', height: 100,),
               const Text(
                 'SELAMAT DATANG KEMBALI',
                 style: TextStyle(

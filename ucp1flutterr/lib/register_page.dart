@@ -284,6 +284,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       'Sudah memiliki akun? Silahkan ',
                       style: TextStyle(color: Colors.black87),
                     ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context, 
+                          MaterialPageRoute(builder: (context) => const LoginPage())
+                        );
+                      },
 
 
               

@@ -80,4 +80,15 @@ class _RegisterPageState extends State<RegisterPage> {
                     color: Colors.white,
                     border: Border.all(color: Colors.grey.shade300),
                   ),
+                  child: TextField(
+                    controller: fullNameController,
+                    decoration: const InputDecoration(
+                      hintText: 'Nama Lengkap',
+                      prefixIcon: Icon(Icons.person),
+                      border: InputBorder.none,
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
 

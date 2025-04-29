@@ -70,3 +70,20 @@ class HomePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          Expanded(
+            child: GridView.count(
+              padding: const EdgeInsets.all(16),
+              crossAxisCount: 2,
+              childAspectRatio: 1,
+              children: [
+                _buildGridItem(context, Icons.paste, 'Data Pikét'),
+                _buildGridItem(context, Icons.people, 'Data Pelanggan'),
+                _buildGridItem(context, Icons.input, 'Barang Masuk/Keluar'),
+                _buildGridItem(context, Icons.add, 'Tambah Item'),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }

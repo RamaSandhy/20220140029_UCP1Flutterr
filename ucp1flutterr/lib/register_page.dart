@@ -223,6 +223,18 @@ class _RegisterPageState extends State<RegisterPage> {
                               color: Colors.white,
                               border: Border.all(color: Colors.grey.shade300),
                             ),
+                            child: TextField(
+                              controller: confirmPasswordController,
+                              obscureText: _obscureConfirmPassword,
+                              decoration: InputDecoration(
+                                hintText: 'Konfirmasi',
+                                prefixIcon: const Icon(Icons.lock),
+                                suffixIcon: GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      _obscureConfirmPassword = !_obscureConfirmPassword;
+                                    });
+                                  },                                  
 
 
               

@@ -125,4 +125,11 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     const SizedBox(width: 16),
+                     Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'Sudah memiliki akun? Silahkan ',
+                      style: TextStyle(color: Colors.black87),
+                    ),
 

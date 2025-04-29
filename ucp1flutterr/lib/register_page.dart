@@ -180,6 +180,18 @@ class _RegisterPageState extends State<RegisterPage> {
                               color: Colors.white,
                               border: Border.all(color: Colors.grey.shade300),
                             ), 
+                            child: TextField(
+                              controller: passwordController,
+                              obscureText: _obscurePassword,
+                              decoration: InputDecoration(
+                                hintText: 'Password',
+                                prefixIcon: const Icon(Icons.lock),
+                                suffixIcon: GestureDetector(
+                                  onTap: () {
+                                    setState(() {
+                                      _obscurePassword = !_obscurePassword;
+                                    });
+                                  },
 
 
               

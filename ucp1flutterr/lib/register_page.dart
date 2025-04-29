@@ -234,7 +234,22 @@ class _RegisterPageState extends State<RegisterPage> {
                                     setState(() {
                                       _obscureConfirmPassword = !_obscureConfirmPassword;
                                     });
-                                  },                                  
+                                  },                      
+                                  child: Icon(
+                                    _obscureConfirmPassword ? Icons.visibility_off : Icons.visibility,
+                                  ),
+                                ),
+                                border: InputBorder.none,
+                                contentPadding: const EdgeInsets.symmetric(vertical: 15),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 40),            
 
 
               

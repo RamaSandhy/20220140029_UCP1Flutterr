@@ -56,4 +56,17 @@ class HomePage extends StatelessWidget {
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  
+                  ElevatedButton(
+                    onPressed: () {
+                      // Logic for Order now button
+                    },
+                    child: const Text('Order now'),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 20),

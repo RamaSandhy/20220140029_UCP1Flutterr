@@ -28,3 +28,17 @@ class HomePage extends StatelessWidget {
               color: const Color(0xFFFF5722),
               borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
             ),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage('assets/profile_picture.png'), // Replace with your profile image
+                  ),
+                  SizedBox(height: 5),
+                  Text('Admin', style: TextStyle(color: Colors.white, fontSize: 22)),
+                ],
+              ),
+            ),
+          ),

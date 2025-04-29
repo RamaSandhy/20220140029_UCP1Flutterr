@@ -17,4 +17,14 @@ class HomePage extends StatelessWidget {
             },
           ),
         ],
-        
+        backgroundColor: const Color(0xFFFF5722),
+      ),
+      body: Column(
+        children: [
+          Container(
+            height: 150,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: const Color(0xFFFF5722),
+              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(20)),
+            ),

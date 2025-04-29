@@ -266,6 +266,17 @@ class _RegisterPageState extends State<RegisterPage> {
                         borderRadius: BorderRadius.circular(30),
                       ),
                     ),   
+                    child: const Text(
+                      'Daftar',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 16),
 
 
               

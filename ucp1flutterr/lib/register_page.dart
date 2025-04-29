@@ -22,6 +22,17 @@ class _RegisterPageState extends State<RegisterPage> {
   bool _phoneError = false;
   bool _passwordError = false;
   bool _confirmPasswordError = false;
+  
+   void validateFields() {
+    setState(() {
+      _nameError = fullNameController.text.isEmpty;
+      _emailError = emailController.text.isEmpty;
+      _phoneError = phoneController.text.isEmpty;
+      _passwordError = passwordController.text.isEmpty;
+      _confirmPasswordError = confirmPasswordController.text.isEmpty || 
+                             (confirmPasswordController.text != passwordController.text);
+    });
+  }
 
   @override
   void dispose() {

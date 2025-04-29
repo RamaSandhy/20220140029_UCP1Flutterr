@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                     },
                     child: const Text('Order now'),
                     style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 105, 12, 126),
+                    backgroundColor: const Color.fromARGB(255, 73, 10, 87),
                     )
                   ),
                 ],

@@ -54,4 +54,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   size: 100,
                   color: Colors.black,
                 ),
+                const SizedBox(height: 10),
+                const Text(
+                  'DAFTAR AKUN BARU',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
 

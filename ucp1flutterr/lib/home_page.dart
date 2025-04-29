@@ -62,8 +62,8 @@ class HomePage extends StatelessWidget {
                     },
                     child: const Text('Order now'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.green,
-                    ),
+                    backgroundColor: Colors.green,
+                    )
                   ),
                 ],
               ),
@@ -87,3 +87,25 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+  
+  Widget _buildGridItem(BuildContext context, IconData icon, String title) {
+    return Card(
+      elevation: 4,
+      child: InkWell(
+        onTap: () {
+          // Logic for when grid item is tapped
+        },
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, size: 40),
+              const SizedBox(height: 8),
+              Text(title, style: const TextStyle(fontSize: 16)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

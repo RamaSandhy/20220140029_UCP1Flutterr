@@ -42,3 +42,17 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Card(
+              elevation: 4,
+              child: Column(
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Text(
+                      'Dapatkan Diskon 25% disetiap harinya',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                  ),

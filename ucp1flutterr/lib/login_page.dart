@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
       String email = emailController.text;
       String password = passwordController.text;
 
-      if (email == 'admin@example.com' && password == 'password123') {
+      if (email == 'rshandy@gmail.com' && password == 'ambatukam') {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const HomePage()),
@@ -71,8 +71,7 @@ class LoginPage extends StatelessWidget {
                 width: double.infinity,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {
-                  },
+                  onPressed: _login,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 76, 3, 91),
                     shape: RoundedRectangleBorder(

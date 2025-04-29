@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                     backgroundImage: AssetImage('assets/profile_picture.png'), // Replace with your profile image
                   ),
                   SizedBox(height: 5),
-                  Text('Admin', style: TextStyle(color: Colors.white, fontSize: 22)),
+                  Text('Rama', style: TextStyle(color: Colors.white, fontSize: 22)),
                 ],
               ),
             ),

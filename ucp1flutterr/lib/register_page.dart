@@ -63,14 +63,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     color: Colors.black,
                     shape: BoxShape.circle,
                   ),
+                  child: Image.asset('assets/stussy.png', height: 100, // Ganti dengan path gambar Anda
+                ),
                 ),
                 const SizedBox(height: 20),
-                const Icon(
-                  Icons.arrow_drop_up,
-                  size: 100,
-                  color: Colors.black,
-                ),
-                const SizedBox(height: 10),
                 const Text(
                   'DAFTAR AKUN BARU',
                   style: TextStyle(
@@ -371,7 +367,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       );
                     },   
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFFF5722),
+                      backgroundColor: const Color.fromARGB(255, 105, 8, 132),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),

@@ -1,28 +1,17 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        primaryColor: const Color(0xFFFF5722),
-        scaffoldBackgroundColor: const Color(0xFFFDF5F2),
-      ),
-      routes: {
-        '/': (context) => const LoginPage(),
-        '/register': (context) => const RegisterPage(),
-      },
-      initialRoute: '/',
-    );
-  }
+  State<RegisterPage> createState() => _RegisterPageState();
 }
+
+class _RegisterPageState extends State<RegisterPage> {
+  final TextEditingController fullNameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmPasswordController = TextEditingController();
 

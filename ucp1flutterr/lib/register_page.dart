@@ -18,6 +18,8 @@ class _RegisterPageState extends State<RegisterPage> {
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
   bool _nameError = false;
+  bool _emailError = false;
+  bool _phoneError = false;
 
   @override
   void dispose() {
@@ -141,6 +143,24 @@ class _RegisterPageState extends State<RegisterPage> {
                                 border: InputBorder.none,
                                 contentPadding: EdgeInsets.symmetric(vertical: 15),
                               ),
+                              onChanged: (value) {
+                                if (_emailError) {
+                                  setState(() {
+                                    _emailError = false;
+                                  });
+                                }
+                              },
+                            ),
+                          ),
+                          if (_emailError)
+                            const Padding(
+                              padding: EdgeInsets.only(top: 5.0, left: 5.0),
+                              child: Text(
+                                'Email tidak boleh kosong',
+                                style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 12,
+                                ),
                             ),
                           ),
                         ],
@@ -174,6 +194,24 @@ class _RegisterPageState extends State<RegisterPage> {
                                 border: InputBorder.none,
                                 contentPadding: EdgeInsets.symmetric(vertical: 15),
                               ),
+                              onChanged: (value) {
+                                if (_phoneError) {
+                                  setState(() {
+                                    _phoneError = false;
+                                  });
+                                }
+                              },
+                            ),
+                          ),
+                          if (_phoneError)
+                            const Padding(
+                              padding: EdgeInsets.only(top: 5.0, left: 5.0),
+                              child: Text(
+                                'No HP tidak boleh kosong',
+                                style: TextStyle(
+                                  color: Colors.red,
+                                  fontSize: 12,
+                                ),
                             ),
                           ),
                         ],

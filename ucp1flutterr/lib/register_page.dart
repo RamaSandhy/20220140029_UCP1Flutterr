@@ -48,4 +48,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     shape: BoxShape.circle,
                   ),
                 ),
+                const SizedBox(height: 20),
+                const Icon(
+                  Icons.arrow_drop_up,
+                  size: 100,
+                  color: Colors.black,
+                ),
 

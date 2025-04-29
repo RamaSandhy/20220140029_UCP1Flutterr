@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ucp1flutterr/register_page.dart';
+import 'package:ucp1flutterr/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -8,6 +9,22 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final emailController = TextEditingController();
     final passwordController = TextEditingController();
+
+    void _login() {
+      String email = emailController.text;
+      String password = passwordController.text;
+
+      if (email == 'admin@example.com' && password == 'password123') {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const HomePage()),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Email atau password salah')),
+        );
+      }
+    }
 
      return Scaffold(
       backgroundColor: const Color(0xFFFDF5F2), 

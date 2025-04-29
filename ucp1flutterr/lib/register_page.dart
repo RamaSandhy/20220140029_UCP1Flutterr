@@ -17,6 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
+  bool _nameError = false;
 
   @override
   void dispose() {
@@ -88,8 +89,29 @@ class _RegisterPageState extends State<RegisterPage> {
                       border: InputBorder.none,
                       contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
+                    onChanged: (value) {
+                      if (_nameError) {
+                        setState(() {
+                          _nameError = false;
+                        });
+                      }
+                    },
                   ),
                 ),
+                if (_nameError)
+                  const Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: EdgeInsets.only(top: 5.0, left: 5.0),
+                      child: Text(
+                        'Nama lengkap tidak boleh kosong',
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  ),
                 const SizedBox(height: 20),
                 Row(
                   children: [
@@ -254,49 +276,18 @@ class _RegisterPageState extends State<RegisterPage> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                     onPressed: () {
-                      if (fullNameController.text.isEmpty ||
-                          emailController.text.isEmpty ||
-                          phoneController.text.isEmpty ||
-                          passwordController.text.isEmpty ||
-                          confirmPasswordController.text.isEmpty) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text('Harap isi semua field!'),
-                            backgroundColor: Colors.red,
-                          ),
-                        );
-                        return;
-                      }
-                      if (passwordController.text != confirmPasswordController.text) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text('Password dan konfirmasi tidak cocok!'),
-                            backgroundColor: Colors.orange,
-                          ),
-                        );
-                        return;
-                      }
-                      // Jika semua valid, lanjut ke halaman login
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Pendaftaran berhasil!'),
-                          backgroundColor: Colors.green,
-                        ),
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context, 
+                        MaterialPageRoute(builder: (context) => const LoginPage())
                       );
-                      Future.delayed(const Duration(seconds: 1), () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(builder: (context) => const LoginPage()),
-                        );
-                      });
-                    },
+                    },   
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFFF5722),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
-                    ),
+                    ),   
                     child: const Text(
                       'Daftar',
                       style: TextStyle(
